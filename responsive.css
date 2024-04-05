@@ -1,0 +1,549 @@
+/* for allllllll */
+@media screen and (max-width: 800px) {
+
+    /* =====================Navbar code========================== */
+    nav {
+        height: auto;
+        background-color: rgb(59, 35, 17);
+        height: 95px;
+        z-index: 10;
+    }
+
+    nav .icons {
+        padding: 5px;
+        display: block;
+        background-color: white;
+        height: 65px;
+        position: relative;
+    }
+
+    nav .icons i {
+        position: absolute;
+        left: 10px;
+        padding: 8px;
+        background-color: rgb(59, 35, 17);
+        top: 0;
+        font-size: 22px;
+        border-radius: 6px;
+        color: rgb(255, 255, 255);
+        transition: all .3s ease;
+        margin-top: 10px;
+    }
+
+    #cross {
+        display: none;
+        transition: all .3s ease;
+    }
+
+    nav .img img {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        position: absolute;
+        top: -300px;
+        width: 100%;
+        transition: all .5s ease-in-out;
+        z-index: -1;
+    }
+
+    nav ul li {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+    }
+
+    nav ul li:nth-child(1) {
+        background-color: rgb(59, 35, 17);
+    }
+
+    #custom-color {
+        color: rgb(255, 255, 255);
+        z-index: 100;
+    }
+
+
+    /* =============================================== */
+}
+
+/* =================Break-Points ======================== */
+/* Mobile devices (320px and below) */
+@media screen and (max-width: 320px) {
+    /* body {
+        background-color: rgb(255, 127, 238);
+    } */
+
+    #hero .hero-overly .text {
+        top: 10%;
+        left: 20%;
+    }
+
+    #hero .hero-overly .text img {
+        width: 35px;
+    }
+
+    #hero .hero-overly .text h4 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    #hero .hero-overly .btn-links {
+        left: 13%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero .hero-overly .btn-links .btn {
+        width: 80px;
+        border-radius: 25px;
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    #hero .hero-overly .btn-links i {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #hero .hero-overly .btn-links .btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+
+    #album .container .row {
+        margin-top: 1px !important;
+    }
+
+    #album #paint {
+        position: absolute;
+        top: -2%;
+        z-index: 1;
+        left: -40%;
+    }
+
+    #album .album-text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #album .album-text h1 {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #album .album-text img {
+        margin-bottom: 20px;
+    }
+
+    #album .album-text .btn {
+        width: 130px;
+    }
+
+    #album #album-svg {
+        position: absolute;
+        bottom: -9%;
+        width: 99%;
+        left: 0;
+    }
+
+    #video {
+        height: auto;
+    }
+
+    #music h1 {
+        font-size: 40px;
+    }
+
+    #video h1 {
+        font-size: 40px;
+    }
+
+    #video .container #traler2,
+    #traler1 {
+        display: none;
+    }
+
+    #text .container .row .content {
+        width: 100%;
+    }
+
+    #text .container .row .content h6 {
+        font-size: 19px;
+        background-color: rgb(59, 35, 17);
+        color: white;
+        padding: 20px;
+        line-height: 35px;
+    }
+
+    #text #svg-img {
+        display: none;
+    }
+
+    #contact h1 {
+        font-size: 40px;
+    }
+
+    #contact .container .row {
+        padding: 0%;
+    }
+
+    .form {
+        width: 200px;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    #contact .row .ico {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .row .ico i {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #contact #svg-img {
+        position: absolute;
+        width: 100%;
+        top: -1%;
+    }
+}
+
+/* Mobile devices (321px to 480px) */
+@media screen and (min-width: 321px) and (max-width: 549px) {
+    /* body {
+        background-color: rgb(255, 246, 127);
+    } */
+
+    #hero .hero-overly .text {
+        top: 10%;
+        left: 26%;
+    }
+
+    #hero .hero-overly .text img {
+        width: 40px;
+    }
+
+    #hero .hero-overly .text h4 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    #hero .hero-overly .btn-links {
+        left: 19%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero .hero-overly .btn-links .btn {
+        width: 110px;
+        border-radius: 25px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #hero .hero-overly .btn-links i {
+        font-size: 23px;
+    }
+
+    #hero .hero-overly .btn-links .btn:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /* ===================Hero Section Completed====================== */
+    #album .container .row {
+        margin-top: 10px !important;
+    }
+
+    #album #paint {
+        position: absolute;
+        top: -2%;
+        z-index: 100;
+        left: -40%;
+    }
+
+    #album .album-text h3 {
+        font-size: 20px;
+    }
+
+    #album .album-text h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #album .album-text .btn {
+        width: 160px;
+    }
+
+    #album #album-svg {
+        position: absolute;
+        bottom: -8%;
+        width: 99%;
+        left: 0;
+    }
+
+    #video {
+        height: auto;
+    }
+
+    #video .container #traler2,
+    #traler1 {
+        display: none;
+    }
+
+    #text .container .row .content {
+        width: 100%;
+    }
+
+    #text .container .row .content h6 {
+        font-size: 20px;
+        background-color: rgb(59, 35, 17);
+        color: white;
+        padding: 20px;
+        line-height: 35px;
+    }
+
+    #text #svg-img {
+        display: none;
+    }
+
+    #contact h1 {
+        font-size: 45px;
+    }
+
+    #contact .container .row {
+        padding: 0%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    #contact .row .ico {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .row .ico i {
+        font-size: 34px;
+        color: white;
+        margin-left: 15px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #contact #svg-img {
+        position: absolute;
+        width: 100%;
+        top: -1.5%;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media screen and (min-width: 550px) and (max-width: 799px) {
+    /* body {
+        background-color: rgb(127, 161, 255);
+    } */
+
+    #hero .hero-overly .text {
+        top: 22%;
+        left: 20%;
+    }
+
+    #hero .hero-overly .text h4 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    #hero .hero-overly .btn-links {
+        left: 8%;
+    }
+
+    #hero .hero-overly .btn-links .btn {
+        width: 180px;
+        border-radius: 25px;
+        font-size: 17px;
+        padding: 7px;
+    }
+
+    #hero .hero-overly .btn-links .btn:nth-child(2) {
+        margin-left: 60px;
+    }
+
+    /* ===================Hero Section Completed====================== */
+    #album .container .row {
+        margin-top: 100px !important;
+    }
+
+    #album #paint {
+        position: absolute;
+        top: -6%;
+        z-index: 100;
+        left: -40%;
+    }
+
+    #album #album-svg {
+        position: absolute;
+        bottom: -6.5%;
+        width: 99%;
+        left: 0;
+    }
+
+    #video {
+        height: auto;
+    }
+
+    #video .container #traler2,
+    #traler1 {
+        display: none;
+    }
+
+    #text #svg-img {
+        display: none;
+    }
+
+    #contact .row .ico {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #contact .row .ico i {
+        text-align: center;
+        margin-left: 13px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    #contact #svg-img {
+        position: absolute;
+        width: 100%;
+        top: -2.5%;
+    }
+}
+
+/* Small screens and laptops (769px to 1024px) */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    /* body {
+        background-color: rgb(255, 174, 127);
+    } */
+
+    #hero .hero-overly .text {
+        top: 22%;
+        left: 25%;
+    }
+
+    #hero .hero-overly .text h4 {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-weight: 700;
+    }
+
+    #hero .hero-overly .btn-links {
+        left: 9%;
+    }
+
+    #hero .hero-overly .btn-links .btn {
+        width: 250px;
+        border-radius: 25px;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #hero .hero-overly .btn-links .btn:nth-child(2) {
+        margin-left: 130px;
+    }
+
+    /* ===================Hero Section Completed====================== */
+
+    #album .container .row {
+        margin-top: 100px !important;
+    }
+
+    #album #paint {
+        position: absolute;
+        top: -6%;
+        z-index: 100;
+        left: -40%;
+    }
+
+    #album #album-svg {
+        position: absolute;
+        bottom: -7%;
+        width: 99%;
+        left: 0;
+    }
+
+    #video {
+        height: auto;
+    }
+
+    #video .container #traler2,
+    #traler1 {
+        display: none;
+    }
+
+    #text #svg-img {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    #contact .row .ico {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .row .ico i {
+        display: inline-block;
+        margin: auto;
+        margin-left: 15px;
+    }
+
+    #contact #svg-img {
+        position: absolute;
+        width: 100%;
+        top: -3%;
+    }
+}
+
+/* Desktops and large screens (1025px to 1200px) */
+/* @media screen and (min-width: 1025px) and (max-width: 1250px) {
+    body {
+        background-color: aquamarine;
+    }
+} */

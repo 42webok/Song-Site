@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital@0;1&family=Rye&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Viaoda+Libre&display=swap');
+
+/* =====================Navbar code here========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rye", serif;
+}
+body{
+    scroll-behavior: smooth;
+    transition: all 1s ease;
+}
+
+nav {
+    background-color: rgb(59, 35, 17);
+    position: relative;
+    height: 120px;
+}
+
+nav .img img {
+    position: absolute;
+    width: 99.5%;
+    top: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    transition: all 3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav .icons {
+    display: none;
+}
+
+/* =============================================== */
+/* =======================Hero Section========================= */
+#hero {
+    position: relative;
+}
+
+#hero .hero-overly::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-overly .text {
+    z-index: 1;
+    position: absolute;
+    top: 22%;
+    left: 33%;
+}
+
+#hero .hero-overly .text h4 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 700;
+}
+
+#hero .hero-overly .text img {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#hero .hero-overly .btn-links {
+    z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    left: 19%;
+    display: flex;
+    justify-content: center;
+}
+
+#hero .hero-overly .btn-links .btn {
+    width: 270px;
+    border-radius: 25px;
+    font-size: 19px;
+    padding: 8px;
+}
+
+#hero .hero-overly .btn-links .btn:nth-child(2) {
+    margin-left: 140px;
+}
+
+#hero .hero-overly .btn-links i {
+    margin-left: 15px;
+    border: 1px solid white;
+    padding: 8px 10px;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+/* ===================Hero Section Completed====================== */
+#album {
+    margin-top: -6px;
+    padding: 20px;
+    background-color: rgb(59, 35, 17);
+    position: relative;
+    transition: all 3s ease;
+}
+
+#album #paint {
+    position: absolute;
+    top: -16%;
+    z-index: 100;
+    left: -30%;
+}
+
+#album .album-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+#album .album-text h3,
+h1,
+img {
+    margin-bottom: 40px;
+}
+
+#album .album-text h3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#album .album-text h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+#album .album-text .btn {
+    width: 210px;
+    border-radius: 26px;
+}
+
+#album #album-svg {
+    position: absolute;
+    bottom: -13%;
+    width: 99%;
+    left: 0;
+}
+
+/* =================Music Setion started Here==================== */
+#music {
+    background-color: rgb(228, 228, 228);
+    position: relative;
+    transition: all 3s ease;
+}
+
+#music h1 {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 70px;
+}
+
+#music .row {
+    background-color: black;
+}
+
+#music .row .vdo-png img {
+    height: 270px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#music #bc {
+    width: 100%;
+}
+
+/* =================VIDEO Setion started Here==================== */
+#video {
+    position: relative;
+    background-color: rgb(224, 220, 210);
+    height: 160vh;
+    transition: all 3s ease;
+}
+
+#video h1 {
+    margin-top: 0 !important;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 170px;
+    transform: translateY(45px);
+}
+
+#video .container {
+    position: relative;
+}
+
+#video .container #traler1 {
+    width: 70%;
+    z-index: 1;
+    position: absolute;
+    left: 22%;
+    top: -29%;
+}
+
+#video .container #traler2 {
+    width: 70%;
+    position: absolute;
+    left: 7%;
+    top: -50%;
+    z-index: 1;
+}
+
+/* ====================Text section Started ====================== */
+#text {
+    position: relative;
+    transition: all .3s ease;
+}
+
+#text .container .row {
+    margin-top: 160px;
+}
+
+#text .container .row #fancy {
+    text-align: center;
+    transform: translateY(-130%);
+    font-style: italic;
+}
+
+#text .container .row .content {
+    width: 400px;
+}
+
+#text .container .row .content h6 {
+    font-size: 25px;
+    background-color: rgb(59, 35, 17);
+    color: white;
+    padding: 25px;
+    line-height: 35px;
+    font-family: "Viaoda Libre", serif;
+}
+
+#text #svg-img {
+    width: 99%;
+    position: absolute;
+    top: -27%;
+}
+
+/* ====================Contact section Started ====================== */
+#contact {
+    position: relative;
+    transition: all .3s ease;
+}
+
+.colors {
+    background-color: rgb(59, 35, 17);
+}
+
+#contact h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    transform: translateY(60px);
+}
+
+#contact .row {
+    margin-top: 100px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 340px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 14px;
+    width: 100%;
+    height: 55px;
+}
+
+.form textarea {
+    border-radius: 14px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+    align-self: flex-end;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 45px;
+    width: 95px;
+    border-radius: 14px;
+}
+
+#contact .row .ico {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .row .ico i {
+    font-size: 48px;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#contact #svg-img {
+    position: absolute;
+    width: 100%;
+    top: -6.2%;
+}
+
+/* ===============Footer Started ====================== */
+footer {
+    padding: 10px;
+    background-color: rgb(59, 35, 17);
+    border-top: 1px solid white;
+}
+
+footer h6 {
+    color: white;
+    text-align: center;
+    font-family: serif;
+    font-size: 17px;
+}
+
+/* loader code here */
+#loader , #sp{
+    display: none;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50% , -50%);
+  }
+  
+  .loader:before {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background: #352e2e50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  .loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #1d1c1c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+  
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
